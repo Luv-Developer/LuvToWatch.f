@@ -130,7 +130,7 @@ const SeatSelection = ({ session }) => {
       console.log("Sending ticket data:", JSON.stringify({ data: ticketData, email: userEmail }, null, 2))
       
       const response = await axios.post(
-        "http://localhost:5000/ticket",
+        "https://luvtowatch.onrender.com/ticket",
         {
           data: ticketData,
           email: userEmail
